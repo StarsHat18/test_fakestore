@@ -101,8 +101,7 @@ class CartScreen extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () async {
                           cartController.cartItems.clear();
-                          await Get.snackbar(
-                              'Success', 'Product added to cart');
+                          await Get.snackbar('Success', 'Checkout succesed');
                           Timer(Duration(seconds: 1), () {
                             Get.to(() => HomeScreen());
                           });
